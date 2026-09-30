@@ -1,0 +1,5 @@
+.amx-ctx{display:none!important}.amx-multi [data-amx="hide"],.amx-multi [data-amx="show"],.amx-multi [data-amx="clear"],[data-a="isolate"],[data-a="show"],[data-a="hide"],[data-a="clear"],[data-amx="hide"],[data-amx="show"],[data-amx="clear"]{display:none!important}
+#stage:fullscreen .amx-overlay,#stage.fs-fokus .amx-overlay{display:block!important;pointer-events:none}
+#m33GizmoFS{display:none;position:absolute;right:14px;top:14px;z-index:60;background:#17212de6;border:1px solid #6b7b8c;border-radius:7px;color:#d8e1ec;padding:8px 12px;font-size:12px;cursor:pointer}#m33GizmoFS[aria-pressed="true"]{color:#ffc299;border-color:#eea477}#stage:fullscreen #m33GizmoFS,#stage.fs-fokus #m33GizmoFS{display:block}
+#m33MediaSummary{font-size:11px;line-height:1.7;padding:10px 12px;border:1px solid #334253;background:#17212c;color:#b5c5d8;border-radius:7px;margin-bottom:12px}.slot-sub{overflow-wrap:anywhere}.slot select{max-width:100%}
+@media(max-width:760px){#m33GizmoFS{right:10px;top:10px;min-height:38px}#m33MediaSummary{font-size:11px}}

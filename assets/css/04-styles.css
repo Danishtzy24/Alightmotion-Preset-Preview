@@ -1,0 +1,33 @@
+/* M29 — editorial workspace; existing engine DOM remains intact. */
+:root { --tl-label:180px; --tl-row:32px; --top-h:54px; --rail:310px; --tl-ruler:30px; }
+#top{background:#14181e;padding:0 18px;border-bottom:1px solid #2a3039;}
+#top::after{display:none}.brand h1{font-size:14px}.subtitle{max-width:270px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+#amuiHud,#amOfflineBadge,.amx-badge{display:none!important}
+#top .btn{height:32px}.top-actions{gap:8px}
+#side{background:#11151a}#tabs{height:42px}.panel{border-radius:8px;margin-bottom:14px}
+.panel h2{font-size:12px}.drop-sub,.panel>.hint{display:none}.file-drop{min-height:100px}
+#transport{background:transparent;border:0;gap:12px}#transport .range-row{max-width:220px}#play{min-width:80px}
+#stage{background:radial-gradient(ellipse at center,#202630,#10141a 80%);padding:0;overflow:hidden}
+#stage::before{display:none!important}
+#view{position:relative;top:22px;border-radius:0;box-shadow:0 0 0 1px #333b48,0 12px 35px #0006;flex-shrink:0}
+.stage-hint,#stageBtnSize{display:none!important}
+#stage .amx-bar{position:absolute;inset:0 0 auto 0;transform:none!important;width:100%;max-width:none;box-sizing:border-box;height:44px;display:flex;justify-content:flex-end;align-items:center;padding:0 16px;gap:6px;border:0;border-bottom:1px solid #2a3039;border-radius:0;background:#151a21;box-shadow:none;backdrop-filter:none;opacity:1}
+.amx-bar::before{content:'KANVAS';margin-right:auto;font-size:10px;letter-spacing:.12em;color:#8993a2;font-weight:600}
+.amx-bar .amx-btn{height:28px;padding:0 9px}.amx-bar .amx-zoomval{min-width:40px;text-align:center}
+#previewQuality{height:28px;font-size:11px;background:#202630;border:1px solid #343d49;color:#dce2eb;border-radius:5px;padding:0 8px;margin-left:10px;width:auto;min-width:90px}
+.amx-comp{top:42px;right:12px;width:258px;box-shadow:0 16px 40px #0008;border-radius:8px}.amx-comp-row{margin-bottom:9px}.amx-comp-row select{height:30px}
+.amx-status{bottom:12px;left:12px;font-size:10px}.amx-status:not(.show){display:none}.amx-status.show{max-width:45%}
+#timelineDock{background:#10141a;border-top:1px solid #353e4a}.tl-toolbar{height:48px;min-height:48px;gap:8px;border-bottom:1px solid #28303b;padding:10px 14px}
+.tl-toolbar h2{font-size:12px}.tl-toolbar .btn{height:28px}.tl-zoomctl{gap:6px}#tl-zoom{width:118px}.tl-zoom-label{min-width:35px}
+.tl-main{gap:0;padding:0 12px 12px}.tl-wrap{border-radius:6px;border-color:#2d3540}#timeline-ruler{background:#161c24}.tl-corner{background:#161c24;color:#8490a0;font-size:10px;letter-spacing:.04em}
+.tl-label{background:#171d25;font-size:11px;padding:0 10px;border-right-color:#303947}.tl-track:nth-child(even) .tl-label{background:#1b222c}.tl-track{border-bottom:1px solid #252c36}.tl-thumb{width:24px;height:19px}.tl-eye{flex-shrink:0}.tl-block{top:5px;bottom:5px;border-radius:4px;font-size:10px;box-shadow:inset 0 1px 0 #ffffff18}.tl-block::after{opacity:.35}
+#layer-info{width:220px;min-width:220px;background:#141a22;border-radius:0;border-left:1px solid #29323e;margin-left:12px}#layer-info:has(>.tl-hint:only-child){display:none}
+/* Fullscreen is content-only: Esc exits; Space continues to play/pause. */
+#stage:fullscreen .amx-bar,#stage.fs-fokus .amx-bar,#stage:fullscreen .amx-status,#stage.fs-fokus .amx-status,#stage:fullscreen .amx-ctx,#stage.fs-fokus .amx-ctx,#stage:fullscreen .amx-overlay,#stage.fs-fokus .amx-overlay,#stage:fullscreen .amx-drawer-btn,#stage.fs-fokus .amx-drawer-btn{display:none!important}
+#stage:fullscreen,#stage.fs-fokus{background:#000!important;padding:0!important}#stage:fullscreen #view,#stage.fs-fokus #view{top:0;box-shadow:none;max-height:none}
+@media(max-width:1100px){:root{--rail:280px}#top{padding:0 10px}.brand h1{font-size:12px}.subtitle{max-width:170px}#transport .range-row{max-width:125px}.amx-bar::before{content:''}#layer-info{display:none}}
+@media(max-width:760px){:root{--top-h:50px}.subtitle{max-width:135px}.top-actions .btn{padding:0 7px}#stage .amx-bar{height:42px;padding:0 6px;gap:0;justify-content:center}.amx-bar .amx-btn{padding:0 6px;font-size:10px}.amx-bar .amx-sep{margin:0 3px}#previewQuality{margin-left:3px;min-width:72px;padding:0 4px}.amx-zoomval{min-width:30px!important}.tl-toolbar{overflow-x:auto;white-space:nowrap;flex-wrap:nowrap}.tl-zoomctl{flex:none}#tl-zoom{width:70px}.tl-main{padding:0 5px 8px}.amx-comp{right:6px;width:246px}#transport{padding:6px 10px}#view{top:21px}}
+
+#stage:fullscreen .amx-fs,#stage.fs-fokus .amx-fs{z-index:50}
+
+#layer-info.m29-empty{display:none!important}
